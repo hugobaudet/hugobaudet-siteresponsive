@@ -1,0 +1,99 @@
+#back{
+    background: linear-gradient(#ffffff, #226D68, #0C0F0A)
+}
+.nav{
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    cursor: pointer;
+    color: #ccc;
+
+}
+
+.titre{
+    text-align: start;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+    color: #226D68;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;    
+    text-align: center;
+}
+.para{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.moi{
+    animation: slideLeft 10s;
+}
+@keyframes slideLeft{
+    from{
+        transform: translate(20%);
+    }
+    30%{
+        transform: translate(-20%);
+        color: rgb(236, 9, 9);
+    }
+    80%{
+        transform: translate(20%);
+        color: rgb(89, 196, 39);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+#carouselExampleIndicators{
+    scale: 60%;
+}
+.img1{
+    max-width: 30%;
+    max-height: 100%;
+    animation: Rotate 10s;
+    margin-left: 40%;
+}
+@keyframes Rotate{
+    from{
+        transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+}
+}
+
+footer {
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+footer h3 {
+    color: #226D68;
+    text-align: center;
+}
+footer a {
+    cursor: pointer;
+    color: #ccc;
+}
+footer p:hover {
+    color: white
+}
+.footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width:640px) {
+    header nav right p {
+        display: none;
+    }
+    .Logo {
+        display: none;
+     }
+}
